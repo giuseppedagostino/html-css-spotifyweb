@@ -46,15 +46,21 @@
   display: flex;
   flex-direction: column;
   /* sfondo */
-  background-color: pink;
+  background-color: black;
 }
+/* main nav header */
 #main_nav_header {
   width: 100%;
   padding: 20px;
   /* sfondo */
-  background-color: white;
-  opacity: 0.4;
 }
+#main_nav_header img {
+  max-width: 210px;
+}
+#main_nav_header h3 {
+  color: white;
+}
+/* main nav middle */
 #main_nav_middle {
   width: 100%;
   padding: 20px;
@@ -63,6 +69,7 @@
   background-color: white;
   opacity: 0.5;
 }
+/* main nav footer */
 #main_nav_footer {
   /* height: 80px; */
   width: 100%;
