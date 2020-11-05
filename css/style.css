@@ -213,6 +213,8 @@ h2 {
 }
 .single_item {
   margin-top: 20px;
+  margin-left: 0.8%;
+  margin-right: 0.8%;
   max-width: 15%
 }
 .single_item img {
