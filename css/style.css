@@ -70,6 +70,9 @@
   padding-left: 17px;
   border-left: 3px solid lightgreen;
 }
+#main_nav_header ul li:first-child a {
+  opacity: 1;
+}
 #main_nav_header i {
   margin-top: 5px;
   margin-bottom: 5px;
