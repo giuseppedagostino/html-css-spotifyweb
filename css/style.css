@@ -110,11 +110,22 @@
   background-color: black;
 }
 #main_nav_footer a {
-  margin-bottom: 10px;
+  line-height: 30px;
 }
-#main_nav_footer p {
+#user {
+  position: relative;
   padding-top: 10px;
   border-top: 1px solid white;
+}
+#user img {
+  height: 30px;
+  border-radius: 50%;
+}
+#user span {
+  position: absolute;
+  /* non ho capito perchè ma è centrato solo con il 55% */
+  top: 55%;
+  transform: translate(0, -50%);
 }
 
 /* MAIN_CONTENT */
