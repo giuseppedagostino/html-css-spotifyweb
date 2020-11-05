@@ -1,5 +1,4 @@
 /* COLORI */
-/* Blu scuro di sfondo all'header #080B12 */
 /* Blu di sfondo al main content #141922 */
 
 /* REGOLE COMUNI */
@@ -65,6 +64,11 @@
 }
 #main_nav_header ul {
   margin: 20px 0;
+}
+#main_nav_header ul li:first-child {
+  margin-left: -20px;
+  padding-left: 17px;
+  border-left: 3px solid lightgreen;
 }
 #main_nav_header i {
   margin-top: 5px;
@@ -135,30 +139,45 @@
   height: calc(100vh - 80px);
   width: calc(100vw - 250px);
   overflow-y: auto;
-  background-color: white;
+  /* sfondo */
+  background-color: black;
 }
+/* main content header */
 #main_content_header {
   position: fixed;
   top: 0;
   height: 80px;
   width: calc(100vw - 250px);
-  padding: 20px;
+  /* informazioni flex */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   /* sfondo */
-  background-color: lightgreen;
-  opacity: 0.75;
+  background-color: #141922;
+  opacity: 0.8;
 }
+#main_content_header input {
+  margin-right: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  /* sfondo */
+  background-color: transparent;
+  border: 1px solid white;
+}
+/* main content top */
 #main_content_top {
   width: 100%;
   margin-top: 80px;
   padding: 20px;
   /* sfondo */
-  background-color: green;
+  background-color: #141922;
 }
+/* main content bottom */
 #main_content_bottom {
   width: 100%;
   padding: 20px;
   /* sfondo */
-  background-color: darkgreen;
+  background-color: green;
 }
 
 /* FOOTER */
