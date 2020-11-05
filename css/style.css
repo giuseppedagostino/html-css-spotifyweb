@@ -7,7 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Rubik', sans-serif;
   color: white;
 }
@@ -35,6 +35,9 @@
 .a_unstyled:hover {
   opacity: 1;
 }
+.ico_margin {
+  margin-right: 10px;
+}
 
 /* MAIN */
 /* MAIN_NAV */
@@ -61,9 +64,9 @@
   margin: 20px 0;
 }
 #main_nav_header i {
-  margin: 5px 0;
-  margin-right: 10px;
-  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 #main_nav_header li {
   position: relative;
@@ -77,7 +80,7 @@
   position: relative;
 }
 #crea_playlist i {
-  font-size: 48px;
+  font-size: 40px;
 }
 #crea_playlist p {
   display: inline-block;
@@ -88,12 +91,14 @@
 /* main nav middle */
 #main_nav_middle {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   overflow-y: auto;
+}
+#main_nav_middle li {
+  margin: 10px 0;
 }
 /* main nav footer */
 #main_nav_footer {
-  /* height: 80px; */
   width: 100%;
   padding: 20px;
 }
