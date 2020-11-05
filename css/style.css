@@ -30,6 +30,7 @@
 }
 h1 {
   font-size: 26px;
+  margin-left: 0.8%;
 }
 h2 {
   font-size: 18px;
@@ -203,6 +204,7 @@ h2 {
 }
 #main_content_bottom p {
   margin-top: 5px;
+  margin-left: 0.8%;
   opacity: 0.5;
 }
 .item_row {
@@ -221,6 +223,8 @@ h2 {
 }
 .single_item:hover {
   cursor: pointer;
+  /* l'opacità è provvisoria !!! */
+  opacity: 0.5;
 }
 .single_item img {
   max-width: 100%;
