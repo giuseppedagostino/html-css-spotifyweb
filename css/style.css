@@ -56,6 +56,9 @@
 #main_nav_header {
   width: 100%;
   padding: 20px;
+  /* sfondo */
+  background-color: black;
+  z-index: 2;
 }
 #main_nav_header img {
   max-width: 160px;
@@ -99,8 +102,19 @@
 }
 /* main nav footer */
 #main_nav_footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   padding: 20px;
+  /* sfondo */
+  background-color: black;
+}
+#main_nav_footer a {
+  margin-bottom: 10px;
+}
+#main_nav_footer p {
+  padding-top: 10px;
+  border-top: 1px solid white;
 }
 
 /* MAIN_CONTENT */
