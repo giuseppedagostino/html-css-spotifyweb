@@ -153,8 +153,8 @@ h2 {
   justify-content: flex-end;
   align-items: center;
   /* sfondo */
-  background-color: #141922;
-  opacity: 0.8;
+  /* perchè ha effetto solo sulla prima parola????? */
+  background: linear-gradient(0deg, rgba(20, 25, 34, 0.8), rgba(20, 25, 34, 1));
 }
 #main_content_header input {
   margin-right: 20px;
@@ -198,7 +198,7 @@ h2 {
   display: flex;
   flex-flow: column wrap;
   /* sfondo */
-  background-color: green;
+  background-color: #141922;
 }
 #main_content_bottom p {
   opacity: 0.5;
