@@ -175,6 +175,14 @@
   /* sfondo */
   background-color: #141922;
 }
+#main_content_top ul {
+  /* informazioni flex */
+  display: flex;
+  justify-content: center;
+}
+#main_content_top ul li {
+  margin: 0 10px;
+}
 /* main content bottom */
 #main_content_bottom {
   width: 100%;
