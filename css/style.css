@@ -103,10 +103,12 @@ h2 {
 /* main nav middle */
 #main_nav_middle {
   width: 100%;
-  /* provato con Gianluca ma non funziona */
-  flex-shrink: 0;
+  height: calc(50% - 115px);
   padding: 0 20px;
   overflow-y: auto;
+  /* sfondo */
+  background-color: black;
+  z-index: 2;
 }
 #main_nav_middle li {
   margin: 10px 0;
@@ -117,8 +119,6 @@ h2 {
   bottom: 0;
   width: 100%;
   padding: 20px;
-  /* sfondo */
-  background-color: black;
 }
 #main_nav_footer a {
   line-height: 30px;
@@ -299,6 +299,7 @@ h2 {
   margin-top: 20px;
   margin-left: 0.8%;
   margin-right: 0.8%;
+  /* DA CAMBIARE */
   width: 15%;
 }
 .ico_div {
