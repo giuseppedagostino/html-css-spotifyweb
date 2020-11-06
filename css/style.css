@@ -357,6 +357,7 @@ footer {
 }
 /* parte sinistra */
 #footer_left {
+  position: relative;
   height: 100%;
   width: 250px;
   padding: 10px;
@@ -372,11 +373,13 @@ footer {
 #footer_left div:nth-of-type(1) {
   margin-left: 10px;
 }
+#footer_left div:nth-of-type(1) a {
+  font-size: 11px;
+}
 #footer_left div:nth-of-type(2) {
-  max-width: 100%;
-  /* istruzioni flex */
-  display: flex;
-  justify-content: space-around;
+  margin: auto;
+  margin-right: 0;
+  /* non riesco a centrare le due cazzo di icone con flex.. */
 }
 /* parte centrale */
 #footer_center {
