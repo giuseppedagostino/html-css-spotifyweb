@@ -58,7 +58,10 @@ h2 {
   background-color: black;
   z-index: 2;
 }
-#main_nav_header img {
+#main_nav_header img:nth-of-type(1) {
+  display: none;
+}
+#main_nav_header img:nth-of-type(2) {
   max-width: 160px;
 }
 #main_nav_header ul {
@@ -137,30 +140,61 @@ h2 {
 }
 /* dispositivi xs */
 @media screen and (max-width: 768px) {
-  #main_nav {
-    width: 60px;
+  .ico_margin {
+    margin-right: 0;
   }
-  /* forse bisogna proprio cambiare immagine!! */
-  #main_nav_header img {
-    max-width: 110px;
+  #main_nav {
+    width: 50px;
+  }
+  #main_nav_header {
+    padding: 0;
+    /* istruzioni flex */
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /* sfondo */
+    background-color: transparent;
+  }
+  #main_nav_header ul {
+    margin: 0;
+  }
+  #main_nav_header ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0px;
+  }
+  #main_nav_header img:nth-of-type(1) {
+    display: block;
+    margin-top: 5px;
+    max-width: 35px;
+  }
+  #main_nav_header img:nth-of-type(2) {
+    display: none;
   }
   #main_nav span {
-    visibility: hidden;
+    display: none;
   }
   #main_nav h3 {
-    visibility: hidden;
+    display: none;
   }
   #crea_playlist {
-    visibility: hidden;
+    display: none;
   }
   #main_nav_middle {
-    visibility: hidden;
+    display: none;
   }
   #main_nav_footer a {
-    visibility: hidden;
+    display: none;
   }
   #user {
+    padding-top: 0;
     border-top: 0;
+    /* istruzioni flex */
+    display: flex;
+    flex-direction: column;
+  }
+  #user img {
+    align-self: center;
   }
 }
 
@@ -202,10 +236,10 @@ h2 {
 /* dispositivi xs */
 @media screen and (max-width: 768px) {
   #main_content {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 50px);
   }
   #main_content_header {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 50px);
   }
 }
 /* main content top */
