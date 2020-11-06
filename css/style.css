@@ -1,5 +1,6 @@
 /* COLORI */
 /* Blu di sfondo al main content #141922 */
+/* Colore di sfondo Footer #282828 */
 
 /* REGOLE COMUNI */
 * {
@@ -352,14 +353,30 @@ footer {
   display: flex;
   justify-content: space-between;
   /* sfondo */
-  background-color: brown;
+  background-color: #282828;
 }
 /* parte sinistra */
 #footer_left {
   height: 100%;
   width: 250px;
-  padding: 20px;
+  padding: 10px;
+  /* istruzioni flex */
+  display: flex;
+  align-items: center;
+  /* sfondo */
   background-color: darkred;
+}
+#footer_left img {
+  width: 60px;
+}
+#footer_left div:nth-of-type(1) {
+  margin-left: 10px;
+}
+#footer_left div:nth-of-type(2) {
+  max-width: 100%;
+  /* istruzioni flex */
+  display: flex;
+  justify-content: space-around;
 }
 /* parte centrale */
 #footer_center {
@@ -369,18 +386,18 @@ footer {
 }
 #footer_center_top {
   height: 50%;
-  padding: 20px;
+  padding: 10px;
   background-color: green;
 }
 #footer_center_bottom {
   height: 50%;
-  padding: 20px;
+  padding: 10px;
   background-color: darkgreen;
 }
 /* parte destra */
 #footer_right {
   height: 100%;
   width: 250px;
-  padding: 20px;
+  padding: 10px;
   background-color: lightcoral;
 }
