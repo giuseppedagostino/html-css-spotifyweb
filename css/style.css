@@ -152,9 +152,6 @@ h2 {
   #main_nav_middle {
     visibility: hidden;
   }
-  /* #main_nav_footer a {
-    visibility: hidden;
-  } */
   #user {
     border-top: 0;
   }
@@ -169,12 +166,6 @@ h2 {
   overflow-y: auto;
   /* sfondo */
   background-color: black;
-}
-/* dispositivi xs */
-@media screen and (max-width: 768px) {
-  #main_content {
-    width: calc(100vw - 60px);
-  }
 }
 /* main content header */
 #main_content_header {
@@ -200,6 +191,15 @@ h2 {
 }
 #main_content_header input:hover {
   /* se aumento la font size il pulsante si ingrandisce e si sposta solo da destra */
+}
+/* dispositivi xs */
+@media screen and (max-width: 768px) {
+  #main_content {
+    width: calc(100vw - 60px);
+  }
+  #main_content_header {
+    width: calc(100vw - 60px);
+  }
 }
 /* main content top */
 #main_content_top {
