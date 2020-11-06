@@ -399,8 +399,29 @@ footer {
 }
 /* parte destra */
 #footer_right {
+  position: relative;
   height: 100%;
   width: 250px;
   padding: 10px;
+  /* istruzioni flex */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* sfondo */
   background-color: lightcoral;
+}
+.line_opacity {
+  height: 3px;
+  background-color: white;
+  opacity: 0.5;
+}
+.line {
+  height: 3px;
+  background-color: white;
+}
+#footer_right .line_opacity {
+  width: 100px;
+}
+#footer_right .line {
+  width: 30px;
 }
