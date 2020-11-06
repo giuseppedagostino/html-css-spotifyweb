@@ -348,6 +348,30 @@ footer {
   bottom: 0;
   height: 80px;
   width: 100vw;
-  padding: 20px;
+  /* istruzioni flex */
+  display: flex;
+  justify-content: space-between;
+  /* sfondo */
   background-color: brown;
+}
+/* parte sinistra */
+#footer_left {
+  height: 100%;
+  width: 250px;
+  padding: 20px;
+  background-color: darkred;
+}
+/* parte centrale */
+#footer_middle {
+  height: 100%;
+  width: 40%;
+  padding: 20px;
+  background-color: green;
+}
+/* parte destra */
+#footer_right {
+  height: 100%;
+  width: 250px;
+  padding: 20px;
+  background-color: darkgreen;
 }
