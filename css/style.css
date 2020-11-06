@@ -222,13 +222,12 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  /* flex-shrink: 0; */
 }
 .single_item {
   margin-top: 20px;
   margin-left: 0.8%;
   margin-right: 0.8%;
-  max-width: 15%
+  width: 15%;
 }
 .ico_div {
   position: relative;
@@ -251,6 +250,34 @@ h2 {
 }
 .single_item img {
   max-width: 100%;
+}
+/* media query per rendere responsive il main in larghezza */
+/* dispositivi lg */
+@media screen and (min-width: 1201px) {}
+/* dispositivi md */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .single_item {
+    width: 24%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+}
+/* dispositivi sm */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .single_item {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+/* dispositivi xs */
+@media screen and (max-width: 768px) {
+  .single_item {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  /* qua devo far restringere la navbar */
 }
 
 /* FOOTER */
