@@ -37,6 +37,18 @@ h2 {
   font-size: 18px;
   margin-top: 5px;
 }
+.line_opacity {
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.3;
+}
+.line {
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  overflow-x: visible;
+}
 
 /* MAIN */
 /* MAIN_NAV */
@@ -410,18 +422,10 @@ footer {
   /* sfondo */
   background-color: lightcoral;
 }
-.line_opacity {
-  height: 3px;
-  background-color: white;
-  opacity: 0.5;
-}
-.line {
-  height: 3px;
-  background-color: white;
-}
 #footer_right .line_opacity {
   width: 100px;
 }
 #footer_right .line {
-  width: 30px;
+  width: 40px;
+  margin-right: 60px;
 }
