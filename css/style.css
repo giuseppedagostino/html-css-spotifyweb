@@ -100,6 +100,8 @@ h2 {
 /* main nav middle */
 #main_nav_middle {
   width: 100%;
+  /* provato con Gianluca ma non funziona */
+  flex-shrink: 0;
   padding: 0 20px;
   overflow-y: auto;
 }
@@ -220,6 +222,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  /* flex-shrink: 0; */
 }
 .single_item {
   margin-top: 20px;
@@ -227,10 +230,24 @@ h2 {
   margin-right: 0.8%;
   max-width: 15%
 }
-.single_item:hover {
+.ico_div {
+  position: relative;
+}
+.single_item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  font-size: 56px;
+}
+.single_item:hover img {
   cursor: pointer;
-  /* l'opacità è provvisoria !!! */
   opacity: 0.5;
+}
+.single_item:hover i {
+  cursor: pointer;
+  visibility: visible;
 }
 .single_item img {
   max-width: 100%;
