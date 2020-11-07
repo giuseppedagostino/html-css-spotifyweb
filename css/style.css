@@ -37,23 +37,24 @@ h2 {
   font-size: 18px;
   margin-top: 5px;
 }
-/* queste sono le tre classi che servono a realizzare il player e il volume */
-.line_opacity {
-  height: 4px;
-  border-radius: 2px;
-  background-color: white;
-  opacity: 0.2;
-}
 .line {
-  /* position relative serve a posizionare la pallina con position absolute */
   position: relative;
   height: 4px;
   border-radius: 2px;
   background-color: white;
   overflow-x: visible;
 }
+.line:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+.line_opacity {
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.2;
+}
 .line_ball {
-  position: absolute;
   height: 12px;
   width: 12px;
   border-radius: 50%;
@@ -370,7 +371,7 @@ h2 {
 footer {
   position: fixed;
   bottom: 0;
-  height: 80px;
+  height: 90px;
   width: 100vw;
   /* istruzioni flex */
   display: flex;
@@ -397,7 +398,7 @@ footer {
   margin-left: 10px;
 }
 #footer_left div:nth-of-type(1) a {
-  font-size: 11px;
+  font-size: 12px;
 }
 #footer_left div:nth-of-type(2) {
   margin: auto;
@@ -408,20 +409,17 @@ footer {
 #footer_center {
   height: 100%;
   width: 40%;
-  background-color: lightgreen;
 }
 /* parte centrale superiore */
 #footer_center_top {
   height: 50%;
   width: 40%;
   margin: auto;
-  padding: 10px;
+  padding-top: 20px;
   /* istruzioni flex */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* sfondo */
-  background-color: green;
 }
 #footer_center_top i {
   font-size: 16px;
@@ -442,8 +440,31 @@ footer {
 /* parte centrale inferiore */
 #footer_center_bottom {
   height: 50%;
-  padding: 10px;
-  background-color: darkgreen;
+  /* istruzioni flex */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer_center_bottom p:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  opacity: 0.5;
+  font-size: 12px;
+}
+#footer_center_bottom p:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  opacity: 0.5;
+  font-size: 12px;
+}
+#player_center {
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.2;
 }
 /* parte destra */
 #footer_right {
@@ -456,14 +477,15 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-#footer_right .line_opacity {
-  width: 100px;
-}
 #footer_right .line {
   width: 40px;
   margin-right: 60px;
 }
+#footer_right .line_opacity {
+  width: 100px;
+}
 #footer_right .line_ball {
+  position: absolute;
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
