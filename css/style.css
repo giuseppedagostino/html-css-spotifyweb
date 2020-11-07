@@ -41,10 +41,8 @@ h2 {
   height: 4px;
   border-radius: 2px;
   background-color: white;
-  overflow-x: visible;
 }
 .line:hover {
-  cursor: pointer;
   background-color: lightgreen;
 }
 .line_opacity {
@@ -458,7 +456,7 @@ footer {
   opacity: 0.5;
   font-size: 12px;
 }
-#player {
+#footer_center_bottom .player {
   position: relative;
   height: 16px;
   width: 80%;
@@ -466,29 +464,28 @@ footer {
   /* debug */
   /* border: 1px solid white; */
 }
-#player:hover {
+#footer_center_bottom .player:hover {
   cursor: pointer;
 }
-#player:hover .line {
+#footer_center_bottom .player:hover .line {
   background-color: lightgreen;
 }
-#player:hover .line_ball {
+#footer_center_bottom .player:hover .line_ball {
   visibility: visible;
 }
-#player .line {
+#footer_center_bottom .player .line {
   position: absolute;
   top: 50%;
-  left: 0;
   width: 15%;
   transform: translate(0, -50%);
 }
-#player .line_ball {
+#footer_center_bottom .player .line_ball {
   position: absolute;
   top: 50%;
   left: 14%;
   transform: translate(0, -50%);
 }
-#player .line_opacity {
+#footer_center_bottom .player .line_opacity {
   position: absolute;
   top: 50%;
   left: 0;
@@ -506,23 +503,37 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-#footer_right .line {
-  width: 40px;
-  margin-right: 60px;
+#footer_right .player {
+  position: relative;
+  height: 16px;
+  width: 120px;
+  /* debug */
+  /* border: 1px solid white; */
 }
-#footer_right .line_opacity {
-  width: 100px;
-}
-#footer_right .line_ball {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-}
-#footer_right .line:hover {
-  background-color: lightgreen;
+#footer_right .player:hover {
   cursor: pointer;
 }
-#footer_right .line:hover .line_ball {
+#footer_right .player:hover .line {
+  background-color: lightgreen;
+}
+#footer_right .player:hover .line_ball {
   visibility: visible;
+}
+#footer_right .player .line {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  transform: translate(0, -50%);
+}
+#footer_right .player .line_ball {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  transform: translate(0, -50%);
+}
+#footer_right .player .line_opacity {
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  transform: translate(0, -50%);
 }
