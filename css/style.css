@@ -38,7 +38,6 @@ h2 {
   margin-top: 5px;
 }
 .line {
-  position: relative;
   height: 4px;
   border-radius: 2px;
   background-color: white;
@@ -459,12 +458,42 @@ footer {
   opacity: 0.5;
   font-size: 12px;
 }
-#player_center {
+#player {
+  position: relative;
+  height: 16px;
   width: 80%;
-  height: 4px;
   border-radius: 2px;
-  background-color: white;
-  opacity: 0.2;
+  /* debug */
+  /* border: 1px solid white; */
+}
+#player:hover {
+  cursor: pointer;
+}
+#player:hover .line {
+  background-color: lightgreen;
+}
+#player:hover .line_ball {
+  visibility: visible;
+}
+#player .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15%;
+  transform: translate(0, -50%);
+}
+#player .line_ball {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(0, -50%);
+}
+#player .line_opacity {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
 }
 /* parte destra */
 #footer_right {
