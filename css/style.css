@@ -255,7 +255,8 @@ h2 {
   border: 1px solid white;
 }
 #main_content_header input:hover {
-  /* se aumento la font size il pulsante si ingrandisce e si sposta solo da destra */
+  font-size: 16px;
+  cursor: pointer;
 }
 /* dispositivi xs */
 @media screen and (max-width: 768px) {
