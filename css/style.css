@@ -418,13 +418,6 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-#footer_center_top i {
-  font-size: 16px;
-  opacity: 0.8;
-}
-#footer_center_top i:hover {
-  opacity: 1;
-}
 #footer_center_top div i {
   margin: 0 10px;
   font-size: 32px;
