@@ -1,6 +1,7 @@
 /* COLORI */
 /* Blu di sfondo al main content #141922 */
 /* Colore di sfondo Footer #282828 */
+/* Verde Spotify #149944 */
 
 /* REGOLE COMUNI */
 * {
@@ -42,8 +43,9 @@ h2 {
   border-radius: 2px;
   background-color: white;
 }
+/* porca miseria ma perchè il verde dell'hover è meno intenso di quello che dovrebbe essere?!?!?!?  */
 .line:hover {
-  background-color: lightgreen;
+  background-color: #149944;
 }
 .line_opacity {
   height: 4px;
@@ -92,7 +94,7 @@ h2 {
 #main_nav_header ul li:first-child {
   margin-left: -20px;
   padding-left: 17px;
-  border-left: 3px solid lightgreen;
+  border-left: 3px solid #149944;
 }
 #main_nav_header ul li:first-child a {
   opacity: 1;
@@ -289,7 +291,7 @@ h2 {
   display: block;
   height: 3px;
   width: 40%;
-  background-color: lightgreen;
+  background-color: #149944;
 }
 #main_content_top ul li:first-child a {
   opacity: 1;
