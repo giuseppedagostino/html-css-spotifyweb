@@ -42,7 +42,7 @@ h2 {
   height: 4px;
   border-radius: 2px;
   background-color: white;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .line {
   /* position relative serve a posizionare la pallina con position absolute */
@@ -410,11 +410,36 @@ footer {
   width: 40%;
   background-color: lightgreen;
 }
+/* parte centrale superiore */
 #footer_center_top {
   height: 50%;
+  width: 40%;
+  margin: auto;
   padding: 10px;
+  /* istruzioni flex */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* sfondo */
   background-color: green;
 }
+#footer_center_top i {
+  font-size: 16px;
+  opacity: 0.8;
+}
+#footer_center_top i:hover {
+  opacity: 1;
+}
+#footer_center_top div i {
+  margin: 0 10px;
+  font-size: 32px;
+}
+#footer_center_top div i:hover {
+  /* trucchetto ! */
+  margin: 0 7px;
+  font-size: 38px;
+}
+/* parte centrale inferiore */
 #footer_center_bottom {
   height: 50%;
   padding: 10px;
